@@ -4,7 +4,9 @@ import br.com.daniel.order.application.port.out.LoadOrderPort;
 import br.com.daniel.order.application.port.out.SaveOrderPort;
 import br.com.daniel.order.domain.Order;
 import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Component;
 
+@Component
 @RequiredArgsConstructor
 public class OrderPersistenceAdapter implements LoadOrderPort, SaveOrderPort {
 
