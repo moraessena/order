@@ -4,10 +4,8 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
-import org.springframework.data.mongodb.core.mapping.Document;
 
 @Data
-@Document("customer")
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString(of = {"name", "email"})

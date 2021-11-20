@@ -1,7 +1,8 @@
 server:
+  port: 8080
   servlet:
     context-path: /api
 spring:
   data:
     mongodb:
-      uri: mongodb://localhost:27017/order?readPreference=primary&appname=order_app&directConnection=true&ssl=false
+      uri: mongodb://localhost:27017/store?readPreference=primary&appname=store_app&directConnection=true&ssl=false
