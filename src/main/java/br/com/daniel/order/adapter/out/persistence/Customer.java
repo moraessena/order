@@ -1,4 +1,4 @@
-package br.com.daniel.order.domain;
+package br.com.daniel.order.adapter.out.persistence;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
