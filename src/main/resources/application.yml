@@ -1,0 +1,4 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/order?readPreference=primary&appname=order_app&directConnection=true&ssl=false
