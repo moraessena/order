@@ -1,11 +1,9 @@
-package br.com.daniel.order.adapter.out.persistence;
+package br.com.daniel.order.domain;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-import lombok.ToString;
+import lombok.*;
 
 @Data
+@Builder
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString(of = {"id", "description"})

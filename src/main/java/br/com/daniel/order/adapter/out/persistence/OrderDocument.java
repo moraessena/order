@@ -11,17 +11,17 @@ import java.time.LocalDateTime;
 import java.util.List;
 
 @Data
-@Document
+@Document("order")
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString(of = {"id"})
-public class Order {
+public class OrderDocument {
 
     @Id
     public String id;
 
-    public Customer customer;
-    public List<Product> products;
+    public CustomerDocument customer;
+    public List<ProductDocument> products;
 
     public LocalDateTime createdAt;
     public LocalDateTime updatedAt;
