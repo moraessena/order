@@ -6,3 +6,5 @@ spring:
   data:
     mongodb:
       uri: mongodb://localhost:27017/store?readPreference=primary&appname=store_app&directConnection=true&ssl=false
+catalog:
+  url: http://localhost:8081/api
