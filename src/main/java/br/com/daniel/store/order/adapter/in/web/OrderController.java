@@ -21,8 +21,8 @@ class OrderController {
     }
 
     @PostMapping
-    void placeOrder(@RequestBody PlaceOrderCommand command) throws Exception {
-        placeOrderUseCase.placeOrder(command);
+    Order placeOrder(@RequestBody PlaceOrderCommand command) throws Exception {
+        return placeOrderUseCase.placeOrder(command);
     }
 
 }
