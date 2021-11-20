@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("/orders")
 @RequiredArgsConstructor
-class OrderController {
+class OrderRestController {
 
     private final GetOrderDetailQuery getOrderDetailQuery;
     private final PlaceOrderUseCase placeOrderUseCase;
