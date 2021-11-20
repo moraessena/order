@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequiredArgsConstructor
 public class ProductRestController {
 
-    private CreateProductUseCase createProductUseCase;
+    private final CreateProductUseCase createProductUseCase;
 
     @PostMapping
     Product createProduct(@RequestBody CreateProductCommand command) {
