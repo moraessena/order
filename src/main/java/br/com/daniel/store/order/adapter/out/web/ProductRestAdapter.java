@@ -6,10 +6,10 @@ import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
-@FeignClient("catalog")
+@FeignClient(value = "catalog", path = "/api")
 interface ProductRestAdapter {
 
-    @GetMapping(value = "/{id}", consumes = {MediaType.APPLICATION_JSON_VALUE})
+    @GetMapping(value = "/products/{id}", consumes = {MediaType.APPLICATION_JSON_VALUE})
     Product getProduct(@PathVariable("id") String id);
 
 }
